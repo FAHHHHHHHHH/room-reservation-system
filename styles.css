@@ -309,14 +309,6 @@ html, body {
     justify-content: center;
 }
 
-.reservation-container {
-    background: #f5e6dc;
-    padding: 30px;
-    border-radius: 15px;
-    width: 400px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
 .reservation-container h2 {
     text-align: center;
     color: #4e0000;
@@ -353,7 +345,8 @@ html, body {
     max-width: 450px;
     margin: 40px auto;
     padding: 20px;
-    background: #f4f4f4
+    background: #f4f4f4;
+    border-radius: 10px;
 }
 
 .reservation-container h2,
@@ -412,24 +405,23 @@ html, body {
 #notification {
     position: fixed;
     top: 20px;
-    right: 20px;
-    padding: 14px 22px;
-    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 14px 24px;
+    border-radius: 12px;
     font-weight: bold;
     opacity: 0;
-    transform: translateY(-20px);
     transition: opacity 0.4s ease, transform 0.4s ease;
     pointer-events: none;
     z-index: 9999;
+    text-align: center;
 }
 
-/* Visible state */
 #notification.show {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(-50%) scale(1);
 }
 
-/* Types */
 #notification.success {
     background: #28a745;
     color: white;
@@ -443,21 +435,6 @@ html, body {
 #notification.info {
     background: #007bff;
     color: white;
-}
-
-#notification {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 14px 24px;
-    border-radius: 12px;
-    font-weight: bold;
-    opacity: 0;
-    transition: opacity 0.4s ease, transform 0.4s ease;
-    pointer-events: none;
-    z-index: 9999;
-    text-align: center;
 }
 
 /* Show animation */
@@ -560,5 +537,6 @@ html, body {
     }
 
 }
+
 
 
