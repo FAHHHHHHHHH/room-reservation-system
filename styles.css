@@ -258,10 +258,11 @@ html, body {
 
 .slider img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
     transition: opacity 0.5s ease-in-out;
+    display: block;
 }
 
 .arrow {
@@ -290,13 +291,14 @@ html, body {
 }
 
 .slider {
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     background: #ffece5;
     padding: 20px;
     overflow: hidden;
     position: relative;
-    left: -150px;
+    margin: 0 auto; /* centers it */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -347,11 +349,11 @@ html, body {
 }
 
 .reservation-container {
-    width: 450px;
+    width: 90%;
+    max-width: 450px;
     margin: 40px auto;
     padding: 20px;
-    background: #f4f4f4;
-    border-radius: 10px;
+    background: #f4f4f4
 }
 
 .reservation-container h2,
@@ -558,4 +560,5 @@ html, body {
     }
 
 }
+
 
