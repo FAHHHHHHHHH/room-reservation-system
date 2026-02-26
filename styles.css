@@ -513,6 +513,10 @@ html, body {
 
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 @media screen and (max-width: 768px) {
 
     /* Make containers full width */
@@ -554,3 +558,4 @@ html, body {
     }
 
 }
+
