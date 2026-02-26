@@ -510,4 +510,47 @@ html, body {
 
 .info-container p {
     line-height: 1.6;
+
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Make containers full width */
+    .reservation-container,
+    .info-container {
+        width: 95%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    /* Fix navigation */
+    .nav li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .main-nav li {
+        padding: 5px 0;
+    }
+
+    /* Fix big fonts */
+    .sections {
+        font-size: 2.5em;
+    }
+
+    .description {
+        font-size: 1.2em;
+    }
+
+    /* Fix slider */
+    .slider {
+        width: 100%;
+        height: auto;
+        left: 0;
+    }
+
+    .slider img {
+        height: auto;
+    }
+
 }
