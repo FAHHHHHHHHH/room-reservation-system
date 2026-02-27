@@ -28,10 +28,15 @@ body {
 }
 
 .nav ul {
+    display: flex;
+    justify-content: space-evenly; /* evenly spaces items */
+    align-items: center;
     margin: 5px;
+    padding: 10px 0;
     background-color: #ffece5;
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0);
+    list-style: none;
 }
 
 .nav li {
@@ -57,10 +62,6 @@ body {
     text-align: center;
     padding: 4px;
     font-size: 1.17em;
-}
-
-.main-nav li {
-    padding: 0 12%;
 }
 
 .section {
@@ -489,4 +490,5 @@ html, body {
 html, body {
     overflow-x: hidden;
 }
+
 
