@@ -497,6 +497,17 @@ html, body {
         margin: 10px;
     }
 
+    .nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    .nav li {
+        display: block;
+        padding: 10px 0;
+    }
+
+}
     .sections {
         font-size: 2.5em;
         max-width: 100%;
@@ -517,11 +528,6 @@ html, body {
     }
 
     /* ONLY mobile should stack nav */
-    .nav li {
-        display: block;
-        padding: 10px 0;
-    }
-
     .main-nav li {
         padding: 5px 0;
     }
@@ -530,3 +536,4 @@ html, body {
         width: 100%;
     }
 }
+
